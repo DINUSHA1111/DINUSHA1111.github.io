@@ -164,6 +164,43 @@
             gap: 0.5rem;
         }
 
+        /* About Section Custom Styling */
+        .about-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .about-card p {
+            margin-bottom: 1.2rem;
+            color: var(--text-color);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-item {
+            background: rgba(31, 41, 55, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .highlight-item i {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
         /* Skills Styling */
         .skills-grid {
             display: grid;
@@ -331,7 +368,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <img src="profile.jpg" onerror="this.onerror=null; this.src='profile.png'; if(!this.src.endsWith('profile.jpeg')) this.src='profile.jpeg';" alt="Dinusha Piyasinghe" class="profile-img">
+            <img src="profile.webp" onerror="this.onerror=null; this.src='profile.jpg'; if(!this.src.endsWith('profile.png')) this.src='profile.png';" alt="Dinusha Piyasinghe" class="profile-img">
             <h1>Hi, I'm <span>Dinusha Piyasinghe</span></h1>
             <p>Information Technology Undergraduate</p>
             <div class="social-links">
@@ -344,11 +381,32 @@
     </section>
 
     <div class="container">
-        <!-- About Section -->
+        <!-- About Section (Expanded) -->
         <section id="about">
             <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
-            <div class="card">
-                <p>Motivated Information Technology undergraduate with a strong foundation in software development, core programming languages (Java, Python), and computer science principles (OOP, Data Structures, Algorithms). Eager to leverage technical skills and contribute to real-world projects in an IT Internship role.</p>
+            <div class="about-card">
+                <p>I am a passionate and driven <strong>Information Technology Undergraduate</strong> at the <strong>University of Ruhuna</strong> with a strong academic foundation in software development, core programming languages, and modern web technologies.</p>
+                <p>My academic journey has equipped me with practical hands-on experience in <strong>Java, Python, PHP, and Mobile App Development</strong>. I have a strong interest in solving real-world problems through technology, as demonstrated by my research publication at <strong>RASAS 2025</strong> on user-centered mobile applications.</p>
+                <p>I thrive in collaborative environments, continuously learning new tools and frameworks to build efficient, scalable, and user-friendly software solutions. Currently, I am seeking an <strong>IT Internship opportunity</strong> where I can apply my technical knowledge and contribute to impactful industry projects.</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>B.A. (Hons.) IT Student</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Published Researcher</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solver</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Seeking Internship</span>
+                    </div>
+                </div>
             </div>
         </section>
 
