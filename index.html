@@ -149,7 +149,73 @@
             gap: 0.5rem;
         }
 
-        /* Cards & Grid */
+        /* Modern Skills Styling */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .skill-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(31, 41, 55, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-color);
+            padding: 0.5rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card i {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .skill-card:hover {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .skill-card:hover i {
+            color: #000;
+        }
+
+        /* Other Cards & Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -180,7 +246,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Tags */
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -271,34 +336,55 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Upgraded Skills Section -->
         <section id="skills">
-            <h2 class="section-title"><i class="fas fa-code"></i> Tech Skills</h2>
-            <div class="card">
-                <div class="tags">
-                    <span class="tag">Java</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">C#</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">OOP</span>
-                    <span class="tag">Data Structures & Algorithms</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
-                    <span class="tag">Visual Studio Code</span>
-                    <span class="tag">Android Studio</span>
-                    <span class="tag">Flutter</span>
+            <h2 class="section-title"><i class="fas fa-laptop-code"></i> Tech Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-card"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-card"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-card"><i class="fas fa-code"></i> C#</span>
+                    </div>
                 </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-card"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skill-card"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="skill-card"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-card"><i class="fab fa-php"></i> PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Core Concepts</h3>
+                    <div class="skill-items">
+                        <span class="skill-card"><i class="fas fa-database"></i> SQL / MySQL</span>
+                        <span class="skill-card"><i class="fas fa-cubes"></i> OOP</span>
+                        <span class="skill-card"><i class="fas fa-sitemap"></i> DSA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-card"><i class="fab fa-android"></i> Android Studio</span>
+                        <span class="skill-card"><i class="fas fa-mobile"></i> Flutter</span>
+                        <span class="skill-card"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-card"><i class="fas fa-terminal"></i> VS Code</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2 class="section-title"><i class="fas fa-laptop-code"></i> Featured Projects</h2>
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Featured Projects</h2>
             <div class="grid">
                 <div class="card">
                     <h3>RepairHub</h3>
